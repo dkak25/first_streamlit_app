@@ -45,3 +45,9 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 
+# New Section to display fruityvice api response to add a second text entry box
+streamlit.header("What rfuit would you like to add?")
+fruit_choice_add = streamlit.text_input('What fruit would you like information about?','Kiwi')
+streamlit.write('The user entered ', fruit_choice_add)
+
+
